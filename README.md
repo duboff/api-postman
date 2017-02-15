@@ -18,7 +18,7 @@ please see the Usabilla [developers guide](http://developers.usabilla.com)
 
 Create your Usabilla environment
 
-![alt tag](https://raw.githubusercontent.com/ulabcool/api-postman/master/readme-1.png)
+![alt tag](https://github.com/ulabcool/api-postman/blob/master/readme-1.png?raw=true)
 
 1. add the environment name
 2. add 'access_key', and enter your accounts Access Key
@@ -28,7 +28,7 @@ Create your Usabilla environment
 
 Set-up your Request
 
-![alt tag](https://raw.githubusercontent.com/ulabcool/api-postman/master/readme-2.png)
+![alt tag](https://github.com/ulabcool/api-postman/blob/master/readme-2.png?raw=true)
 
 1. make a GET request
 2. add the URL you want to connect to
@@ -40,7 +40,7 @@ Set-up your Request
 
 Add the Pre-Request Script
 
-![alt tag](https://raw.githubusercontent.com/ulabcool/api-postman/master/readme-3.png)
+![alt tag](https://github.com/ulabcool/api-postman/blob/master/readme-3.png?raw=true)
 
 1. copy the code from this repository and paste it in this tab!
 
