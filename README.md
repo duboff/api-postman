@@ -34,7 +34,7 @@ Set-up your Request
 2. add the URL you want to connect to
 3. in the 'HEADERS' tab add two headers
    * Set the Authorization header to {{ub_header_auth}}
-   * Set the x-ubsl header to {{ub_header_date}}
+   * Set the x-ubsl-date header to {{ub_header_date}}
 
 ### Step 3
 
