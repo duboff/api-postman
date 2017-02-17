@@ -152,7 +152,7 @@ SignatureFactory.ENCODING = 'utf8';
 
 url = new URL(request.url)
 
-sf = new SignatureFactory(postman.getEnvironmentVariable("access_key"), postman.getEnvironmentVariable("secrect_key"), url.hostname);
+sf = new SignatureFactory(postman.getEnvironmentVariable("access_key"), postman.getEnvironmentVariable("secret_key"), url.hostname);
 sf.setUrl(url.pathname);
 sf.setQueryParameters(url.search.substring(1));
 
