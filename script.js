@@ -23,7 +23,7 @@ class SignatureFactory {
   setUrl(url) {
     // mandatory
     // URL encode wildcard
-    this.url = url.replace('*', '%2A'),;
+    this.url = url.replace('*', '%2A');
   }
 
   setMethod(method) {
