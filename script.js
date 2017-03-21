@@ -22,7 +22,8 @@ class SignatureFactory {
 
   setUrl(url) {
     // mandatory
-    this.url = url;
+    // URL encode wildcard
+    this.url = url.replace('*', '%2A'),;
   }
 
   setMethod(method) {
@@ -142,9 +143,6 @@ class SignatureFactory {
     return CryptoJS.SHA256(string);
   }
 }
-
-SignatureFactory.HMAC = 'sha256';
-SignatureFactory.ENCODING = 'utf8';
 
 /**
  * This is code to init the auth and date header
