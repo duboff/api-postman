@@ -148,11 +148,15 @@ class SignatureFactory {
  * This is code to init the auth and date header
  */
 
-url = new URL(request.url)
+var sdk = require('postman-collection'),
+    url = new sdk.Url(request.url),
+    hostname = url.getHost(),
+    pathname = url.getPath(),
+    queryString = url.getQueryString();
 
-sf = new SignatureFactory(postman.getEnvironmentVariable("access_key"), postman.getEnvironmentVariable("secret_key"), url.hostname);
-sf.setUrl(url.pathname);
-sf.setQueryParameters(url.search.substring(1));
+sf = new SignatureFactory(postman.getEnvironmentVariable("access_key"), postman.getEnvironmentVariable("secret_key"), hostname);
+sf.setUrl(pathname);
+sf.setQueryParameters(queryString);
 
 postman.setGlobalVariable('ub_header_auth', sf.authHeader());
 postman.setGlobalVariable('ub_header_date', sf.dates.longdate);
